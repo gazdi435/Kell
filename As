@@ -1,0 +1,20 @@
+majd a minikozfelvirben cseréld ki erre a datagridet:
+
+<DataGrid x:Name="dgMain" AutoGenerateColumns="False">
+    <DataGrid.Columns>
+        <DataGridTextColumn Header="OM Azonosító" Binding="{Binding OM_Azonosito}" />
+
+        <DataGridTextColumn Header="Név" Binding="{Binding Neve}" />
+
+        <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+
+        <DataGridTextColumn Header="Születési Dátum" Binding="{Binding SzuletesiDatum, StringFormat=\{0:yyyy\.MM\.dd\.\}}" />
+
+        <DataGridTextColumn Header="Értesítési Cím" Binding="{Binding ErtesitesiCime}" />
+
+        <DataGridTextColumn Header="Matematika" Binding="{Binding Matematika}" />
+
+        <DataGridTextColumn Header="Magyar" Binding="{Binding Magyar}" />
+
+    </DataGrid.Columns>
+</DataGrid>
